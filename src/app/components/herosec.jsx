@@ -20,8 +20,12 @@ const HeroSection = () => {
       <div className="top">
         <nav className="logo md:flex px-20 py-4 justify-between items-center hidden ">
           <Image src={Logo} className="w-28 cursor-pointer" alt="SamarpanKc logo"></Image>
+          <div className="right flex gap-2 justify-center items-center font-noto">
+            <Button variant="link">Blogs</Button>
           <Button variant="customOutline">Resume</Button> 
           {/* Download Resume on click */}
+          
+          </div>
         </nav>
         <div className="hero sm:flex w-screen h-max md:h-screen px-12 py-12 md:-mt-14 md:py-0 md:px-28 items-center font-noto justify-around gap-16">
           <div className="left flex items-center md:items-start flex-col gap-6 w-70 md:w-5/6">
