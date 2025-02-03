@@ -12,19 +12,27 @@ import {
   faSquareGithub,
   faSquareInstagram,
 } from "@fortawesome/free-brands-svg-icons";
-import {faEnvelope} from "@fortawesome/free-regular-svg-icons";
+import { faEnvelope } from "@fortawesome/free-regular-svg-icons";
 
 const HeroSection = () => {
   return (
     <>
       <div className="top">
         <nav className="logo md:flex px-20 py-4 justify-between items-center hidden ">
-          <Image src={Logo} className="w-28 cursor-pointer" alt="SamarpanKc logo"></Image>
-          <div className="right flex gap-2 justify-center items-center font-noto">
-            <Button variant="link">Blogs</Button>
-          <Button variant="customOutline">Resume</Button> 
-          {/* Download Resume on click */}
-          
+          <Image
+            src={Logo}
+            className="w-28 cursor-pointer"
+            alt="SamarpanKc logo"
+          ></Image>
+          <div className="right flex gap-2 justify-center items-center font-gabarito">
+            <Link href={"../Blogs"}>
+              {" "}
+              <Button variant="link">Blogs</Button>
+            </Link>
+            <Button className="font-gabarito" variant="customOutline">
+              Resume
+            </Button>
+            {/* Download Resume on click */}
           </div>
         </nav>
         <div className="hero sm:flex w-screen h-max md:h-screen px-12 py-12 md:-mt-14 md:py-0 md:px-28 items-center font-noto justify-around gap-16">
@@ -43,7 +51,7 @@ const HeroSection = () => {
                 Front-end Developer
               </motion.h1>
             </div>
-            <p className="text-center md:text-start ">
+            <p className="text-center -mt-4 mb-2 md:text-start font-gabarito ">
               A guy who eager to creating modern, interactive, and responsive
               user interfaces using React.js and Next.js with also have a
               background in UI/UX principles.
@@ -119,12 +127,18 @@ const HeroSection = () => {
                 </Link>
               </Tooltip>
             </div>
-            <div className="Mailbtn hidden md:flex">
+            <div className="Mailbtn hidden md:flex ">
               <Link
                 href="mailto:reach.samarpankc@gmail.com?subject=Hello&body=Hi, I came across your website and wanted to reach out"
                 target="_blank"
               >
-                <Button variant="custom"><FontAwesomeIcon icon={faEnvelope} style={{color: "#0e1428",}} /> Mail Me</Button>
+                <Button variant="custom" className="font-noto">
+                  <FontAwesomeIcon
+                    icon={faEnvelope}
+                    style={{ color: "#0e1428" }}
+                  />{" "}
+                  Mail Me
+                </Button>
               </Link>
             </div>
           </div>

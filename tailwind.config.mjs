@@ -74,7 +74,8 @@ export default {
   			'notodevanagari': [
   				'Noto Sans Devanagari',
   				'serif'
-  			]
+  			],
+			'gabarito':["Gabarito", 'serif'],
   		},
   		borderRadius: {
   			lg: 'var(--radius)',

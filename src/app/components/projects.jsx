@@ -6,6 +6,7 @@ import HmLogo from "@/app/images/HmLogo.png";
 import WeatherLogo from "@/app/images/weatherapplogo.webp";
 import Cards from "./cards";
 import { motion } from "framer-motion";
+import Link from "next/link";
 
 
 const Projects = () => {
@@ -47,7 +48,7 @@ const Projects = () => {
               image={HmLogo}
               ProjectName={"Harmony Music"}
               Description={"This is the music learning academic platform"}
-              direct={""}
+              direct="https://harmony-music-academy-samarpankc.vercel.app/"
             />
           </motion.div>
           <motion.div variants={itemVariants}>
@@ -55,6 +56,7 @@ const Projects = () => {
               image={WeatherLogo}
               ProjectName={"Weather App"}
               Description={"Learning of the API fetching data in JavaScript"}
+              direct="https://weatherapp-samarpan.netlify.app/"
             />
           </motion.div>
           <motion.div variants={itemVariants}>
@@ -62,6 +64,7 @@ const Projects = () => {
               image={RPCLogo}
               ProjectName={"Rock Paper Scissors Game"}
               Description={"This is my first javascript project"}
+              direct="https://rock-paper-scissors-samarpankc.netlify.app/"
             />
           </motion.div>
         </motion.div>
@@ -74,7 +77,8 @@ const Projects = () => {
           // viewport={{ once: true  }}
         >
           Pro<span className="text-tangerine">jects</span>
-          <motion.p className="text-xl cursor-pointer text-end hover:underline">see more</motion.p>
+          <Link href="https://github.com/SamarpanKc?tab=repositories" target="_blank">
+          <motion.p className="text-xl cursor-pointer text-end hover:underline">see more</motion.p></Link>
         </motion.h1>
       </motion.div>
     </>
