@@ -22,7 +22,7 @@ const Footer = () => {
         </div>
         <div className="left flex flex-col px-0 gap-4 font-gabarito underline select-none ">
           <h1 className="text-center md:text-left">Connect with me on:</h1>
-          <div className="links flex items-center md:items-start flex-wrap md:flex-row text-silver gap-4">
+          <div className="links flex justify-center items-center md:items-start flex-wrap md:flex-row text-silver gap-4">
             <Link href={"https://github.com/SamarpanKc"} target="_blank">
               <Button className="font-gabarito ">
                 <FontAwesomeIcon icon={faSquareGithub} className="mr-2" />
@@ -47,6 +47,13 @@ const Footer = () => {
                 Instagram
               </Button>
             </Link>
+            <Link className="flex md:hidden" href={"./samarpan-kc-resume.pdf"}
+            target="_blank"
+            alt="Samarpan KC Resume"
+            >
+            <Button className="font-gabarito" variant="customOutline">
+              Resume
+            </Button></Link>
           </div>
         </div>
       </div>
