@@ -26,19 +26,19 @@ const Skills = () => {
   return (
     <>
       <motion.div
-        className="container select-none flex flex-col md:flex-row font-noto font-semibold text-3xl px-2 md:px-12 py-10 items-center justify-around gap-9"
+        className="container select-none max-w-full flex flex-col md:flex-row font-noto font-semibold text-3xl px-2 md:px-12 py-10 items-center justify-around gap-9"
         initial={{ opacity: 0, scale: 0.8 }} // Initial state
         whileInView={{ opacity: 1, scale: 1 }} // Animate when in view
         viewport={{ once: true, margin: "-100px" }} // Trigger once, adjust margin
         transition={{ duration: 0.5 }}
       >
         <motion.h1 
-          className="Topic md:text-8xl uppercase font-black"
+          className="Topic md:text-4xl lg:text-8xl uppercase font-black"
           initial={{ x: -100 }}
           whileInView={{ x: 0 }}
           transition={{ type: "spring", stiffness: 50 }}
         >
-          <span className="text-tangerine stroke-3">I'm</span> Into
+          <span className="text-tangerine stroke-3 ">I'm</span> Into
         </motion.h1>
 
         {/* Animated Grid */}

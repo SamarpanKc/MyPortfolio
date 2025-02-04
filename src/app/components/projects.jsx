@@ -29,7 +29,7 @@ const Projects = () => {
   return (
     <>
       <motion.div 
-        className="container select-none flex flex-col md:flex-row font-noto font-semibold text-3xl px-2 md:px-12 py-10 items-center justify-around gap-9"
+        className="container select-none max-w-full flex flex-col-reverse md:flex-row font-noto font-semibold text-3xl px-2 md:px-12 py-10 items-center justify-around gap-9"
         initial={{ opacity: 0, scale: 0.9 }}
         whileInView={{ opacity: 1, scale: 1 }}
         viewport={{ once: true, margin: "-100px" }}
@@ -70,7 +70,7 @@ const Projects = () => {
         </motion.div>
 
         <motion.h1 
-          className="Topic md:text-8xl uppercase font-black"
+          className="Topic md:text-4xl lg:text-8xl uppercase font-black"
           initial={{ x: 100 }}  // Changed to positive value for right-side entry
           whileInView={{ x: 0 }}
           transition={{ type: "spring", stiffness: 50 }}
@@ -78,7 +78,7 @@ const Projects = () => {
         >
           Pro<span className="text-tangerine">jects</span>
           <Link href="https://github.com/SamarpanKc?tab=repositories" target="_blank">
-          <motion.p className="text-xl cursor-pointer text-end hover:underline">see more</motion.p></Link>
+          <motion.p className="text-xl cursor-pointer text-center md:text-end underline md:no-underline hover:underline">see more</motion.p></Link>
         </motion.h1>
       </motion.div>
     </>

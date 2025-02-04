@@ -29,35 +29,39 @@ const HeroSection = () => {
               {" "}
               <Button variant="link">Blogs</Button>
             </Link>
+            <Link href={"./samarpan-kc-resume.pdf"}
+            target="_blank"
+            alt="Samarpan KC Resume"
+            >
             <Button className="font-gabarito" variant="customOutline">
               Resume
-            </Button>
+            </Button></Link>
             {/* Download Resume on click */}
-          </div>
-        </nav>
-        <div className="hero sm:flex w-screen h-max md:h-screen px-12 py-12 md:-mt-14 md:py-0 md:px-28 items-center font-noto justify-around gap-16">
-          <div className="left flex items-center md:items-start flex-col gap-6 w-70 md:w-5/6">
-            <div className="name flex flex-col items-center md:items-start gap-3 select-none">
-              <motion.h1 className="font-noto font-semibold text-xl md:text-3xl text-silver">
-                Namaste,
-              </motion.h1>
-              <motion.h1 className="font-noto flex flex-col items-center md:items-start font-semibold text-4xl md:text-5xl text-silver">
-                It's me{" "}
-                <span className="font-bold text-tangerine underline cursor-pointer">
-                  Samarpan KC
-                </span>
-              </motion.h1>
-              <motion.h1 className="font-noto opacity-70 font-semibold text-xl text-silver">
-                Front-end Developer
-              </motion.h1>
-            </div>
-            <p className="text-center -mt-4 mb-2 md:text-start font-gabarito ">
-              A guy who eager to creating modern, interactive, and responsive
-              user interfaces using React.js and Next.js with also have a
-              background in UI/UX principles.
-            </p>
-            <div className="icons flex gap-20 pb-6">
-              {/* LinkedIn Tooltip */}
+                  </div>
+                </nav>
+                <div className="hero sm:flex max-w-full h-max md:h-screen px-12 py-12 md:-mt-14 md:py-0 md:px-20 lg:px-28 xl:px-40 2xl:px-48 items-center font-noto justify-around gap-16">
+                  <div className="left flex items-center md:items-start flex-col gap-6 w-70 md:w-5/6">
+                  <div className="name flex flex-col items-center md:items-start gap-3 select-none">
+                    <motion.h1 className="font-noto font-semibold text-xl md:text-2xl lg:text-3xl xl:text-4xl text-silver">
+                    Namaste,
+                    </motion.h1>
+                    <motion.h1 className="font-noto flex flex-col items-center md:items-start font-semibold text-4xl md:text-4xl lg:text-5xl xl:text-6xl text-silver">
+                    It's me{" "}
+                    <span className="font-bold text-tangerine underline cursor-pointer">
+                      Samarpan KC
+                    </span>
+                    </motion.h1>
+                    <motion.h1 className="font-noto opacity-70 font-semibold text-xl md:text-xl lg:text-2xl xl:text-2xl text-silver">
+                    Front-end Developer
+                    </motion.h1>
+                  </div>
+                  <p className="text-center -mt-4 mb-2 md:text-start font-gabarito xl:text-lg">
+                    A guy who eager to creating modern, interactive, and responsive
+                    user interfaces using React.js and Next.js with also have a
+                    background in UI/UX principles.
+                  </p>
+                  <div className="icons flex gap-20 pb-6">
+                    {/* LinkedIn Tooltip */}
               <Tooltip
                 className="px-2"
                 content="samarpankc"
