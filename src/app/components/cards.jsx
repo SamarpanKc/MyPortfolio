@@ -5,7 +5,7 @@ import Link from "next/link";
 export default function Cards({ ProjectName, image, Description, direct, }) {
   return (
     <div className="w-full max-w-md mx-auto flex justify-center items-center">
-      <div className="bg-oxfordBlue p-4 w-3/4 md:w-auto md:p-5 rounded-lg shadow-lg overflow-hidden transition-all duration-300 hover:shadow-xl flex flex-col md:flex-row items-center gap-4">
+      <div className="bg-oxfordBlue p-4 w-4/5 md:w-auto md:p-5 rounded-lg shadow-lg overflow-hidden transition-all duration-300 hover:shadow-xl flex flex-col md:flex-row items-center gap-4">
         <Image
           className="rounded-sm"
           src={image}

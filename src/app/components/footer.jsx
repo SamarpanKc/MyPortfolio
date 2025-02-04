@@ -20,8 +20,8 @@ const Footer = () => {
             © 2025 Samarpan KC's Portfolio. All rights reserved.
           </h1>
         </div>
-        <div className="left flex flex-col px-0 gap-4 font-gabarito underline select-none ">
-          <h1 className="text-center md:text-left">Connect with me on:</h1>
+        <div className="left flex flex-col px-0 gap-4 font-gabarito  select-none ">
+          <h1 className="text-center md:text-left underline">Connect with me on:</h1>
           <div className="links flex justify-center items-center md:items-start flex-wrap md:flex-row text-silver gap-4">
             <Link href={"https://github.com/SamarpanKc"} target="_blank">
               <Button className="font-gabarito ">
